@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <!-- This is a comment -->
-  <title>Pooja Bajaj</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lattitude</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 </head>
 <body>
-  <h1>Pooja_Bajaj</h1>
-
-  <img src="http://cdn.akc.org/content/hero/puppy-boundaries_header.jpg" alt="Puppy">
-  <br />
-  <p1>Hello everyone, my name is Pooja. I am from India.</p1>
-  <br />
-  <p2>I have a bachelor's degree in electronics enginnering. I have a 10+ years of experience in software industry. I am currently working on a data analytics bootcamp</p2>
-  <br />
-  <ul>
-    <a href=# target="_blank">Email: b4.pooja@gmail.com</a>
-    <br />
-  </ul>
-<table>
-    <tr>
-    <th>Movie</th>
-    <th>Book</th>
-    <th>Hobby</th>
-   
-
-    </tr>
-  <tr>
-    <td>A b'ful mind</td>
-    <td>Atlus shrugged</td>
-    <td>hanging out with my kid/s</td>
-  </tr>
-  <tr>
-      <td>Mission Impossible</td>
-      <td>Not a penny less not a penny more</td>
-      <td>hanging out with friends</td>
-    </tr>
-</table>
-
+<div class="container-fluid container-fluid-2">
+  <nav class="navbar navbar-default main-header">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.jpg" width="157" height="65"></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="visualization_1.html">Max Temperature</a></li>
+              <li><a href="visualization_2.html">Humidity</a></li>
+              <li><a href="visualization_3.html">Cloudiness</a></li>
+              <li><a href="visualization_4.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparisons.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </nav>
+  <div class="container outer-boxes">
+    <div class="col-lg-8 col-md-8 col-sm-12 box-left">
+      <div class="inner-box">
+        <h2 class="heading">Summary: Latitude vs. X</h2>
+        <div class="text"><img src="img/Fig1.png" class="img-responsive">
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the openweathermap API to assemble a dataset on over 500 cities.<br/>
+            <br/>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of analysis, as well as explnations and descriptions of analysis trends and correlations witnessed.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 box-right">
+      <div class="inner-box">
+        <h2 class="heading">Visualizations</h2>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 figure-img"><img src="img/Fig1.png" class="img-responsive"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 figure-img"><img src="img/Fig2.png" class="img-responsive"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 figure-img"><img src="img/Fig3.png" class="img-responsive"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 figure-img"><img src="img/Fig4.png" class="img-responsive"></div>
+      </div>
+    </div>
+  </div>
+  <footer> © Copyright Coding Bootcamp 2018 </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
